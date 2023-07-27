@@ -10,8 +10,11 @@ class Base
     private :
         int a , b ;
     public :
-        void setA (int x) { a = x ; }
-        void setB (int x) { b = x ; }
+        void setData()
+        {
+            cout<<"Enter value of a & b : ";
+            cin>>a>>b ;
+        }
         int getA() { return a ; }
         int getB() { return b ; }   
 } ;
@@ -23,7 +26,6 @@ class Derivied : public Base
         {
             int temp ;
             temp = getA() + getB() ;
-            //temp = a+b ;
             return temp ;
         }
     public :
@@ -35,17 +37,8 @@ class Derivied : public Base
 
 int main ()
 {
-    Derivied d1 ;    
-
-    int x , y ;
-    cout<<"Enter value of a : ";
-    cin>>x ;
-    d1.setA(x) ;
-
-    cout<<"Enter value of b : ";
-    cin>>y ;
-    d1.setB(y) ;
-
+    Derivied d1 ;  
+    d1.setData() ;
     d1.showSum() ;
     return 0 ;
 }
