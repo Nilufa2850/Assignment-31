@@ -47,8 +47,8 @@ void exchange (First &m, Second &n )
     m.a = n.x ;
     n.x = temp.a ;
 
-    cout<<"after swapping : "<<endl ;
-    cout<<"a = "<<m.a<<" x = "<<n.x<<endl ;
+    //cout<<"after swapping : "<<endl ;
+    //cout<<"a = "<<m.a<<" x = "<<n.x<<endl ;
 }
 
 int main ()
@@ -62,6 +62,9 @@ int main ()
     s.showData_sec() ;
 
     exchange(f , s) ;
+    cout<<"After Swapping"<<endl ;
+    f.showData() ;
+    s.showData_sec() ;
 
-    
+    return 0 ;
 }
