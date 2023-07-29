@@ -5,7 +5,7 @@ reference method).*/
 #include<iostream>
 using namespace std ;
 
-class Second ;      // becoz we use of Second class inside First class
+class Second ;      // becoz we use of Second class inside First class.
 class First
 {
     private : 
